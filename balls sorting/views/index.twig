@@ -77,6 +77,16 @@
       "json"
     );
   });
+  
+  $("#reset").click(function (e) { 
+    e.preventDefault();
+    $.post("/api/reset",
+      function (data, textStatus, jqXHR) {
+        
+      },
+      "json"
+    );
+  });
 
   $("#stop").click(function (e) { 
     e.preventDefault();

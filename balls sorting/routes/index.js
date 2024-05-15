@@ -69,6 +69,9 @@ router.post('/api/start', (req, res, next)=>{
     res.status(403).send()
   }
 })
+router.post('/api/reset', (req, res, next)=>{
+    arduino.write("ctReset");
+})
 
 router.post('/api/stop', (req, res, next)=>{
   if(etat.idle === false){
