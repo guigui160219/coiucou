@@ -29,7 +29,7 @@
             <p class="card-text">Current state : <span id="state">nA</span> </p>
             <h4 class="card-title">Reset</h4>
             <p class="card-text">Use the button to reset all the record record</p>
-            <button type="button" name="" id="start" class="btn btn-outline-black btn-lg btn-block" style="display: block">Reset</button>
+            <button type="button" name="" id="reset" class="btn btn-outline-black btn-lg btn-block" style="display: block">Reset</button>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
       "json"
     );
   });
-  
+
   $("#reset").click(function (e) { 
     e.preventDefault();
     $.post("/api/reset",
