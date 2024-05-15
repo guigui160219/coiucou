@@ -71,6 +71,7 @@ router.post('/api/start', (req, res, next)=>{
 })
 router.post('/api/reset', (req, res, next)=>{
     arduino.write("ctReset");
+    res.status(200).send()
 })
 
 router.post('/api/stop', (req, res, next)=>{
